@@ -9,7 +9,12 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    
     <link rel = "stylesheet" href = "css/style.css">
+    <script src = "js/mainjs.js"></script>
+    
     <title>ant-i</title>
   </head>
 
@@ -18,15 +23,90 @@
         <div class = "mainHead">
             <h1>ant-i</h1>
             <ul>
-            <li><a href = "#">主页</a></li>
-            <li><a href = "#">天安门事件</a></li>
-            <li><a href = "#">文化大革命</a></li>
+            <li><a id = "home" href = "index.html" class = "active">Home</a></li>
+            <li><a id = "junefourthincident" href = "html/juneFourthIncident.html">June Fourth Incident</a></li>
+            <li><a id = "chineseculturalrevolution" href = "html/chineseCulturalRevolution.html">Chinese Cultural Revolution</a></li>
+            <li><a id = "falungong" href = "#">Falun Gong</a></li>
+            <li><a id = "communistpartyofchina" href = "#">Communist Party of China</a></li>
+            <li><a id = "tibet" href = "#">Tibet</a></li>
+            <li><a id = "hongkong" href = "#">Hong Kong</a></li>
+            <li><a id = "taiwan" href = "#">Taiwan</a></li>
+            <li><a id = "chinesecivilwar" href = "#">Chinese Civil War</a></li>
+            <li><a id = "chinesetravelers" href = "#">Chinese Travelers</a></li>
+            <li><a id = "chineseexclusionact" href = "#">Chinese Exclusion Act</a></li>
+            <hr>
+            <li><a id = show_login href = "#">Sign in / Sign up</a></li>
             </ul>    
         </div>
-        <div class = "mainBody">
-        </div>
-        <div class = "mainFooter">
+        <div id = "home-mainBody">
+           <pre id="home-pre">
+               We are here to discuss and solve problems
+                    
+               1. Find a topic which you think is interesting
+               2. Read the related material to the topic
+               3. Think about it and post your comment
+           </pre>
         </div>
     </div>
+    
+        <div id = "loginform">
+            <form method = "post" action = "">
+                <label id = "close_login" style = "float:right">x</label><br>                
+                <p style="text-align:center">Sign in</p>
+                
+                <center>
+                <input type = "text" id = "email" placeholder = "email" name = "uid" required = "required">
+                </center>
+               
+                <br>
+                
+                <center>
+                <input type = "password" id = "password" name = "upass" placeholder = "password" required = "required">
+                </center>
+                
+                <br>
+                
+                <center>
+                 <input type = "submit" id = "dologin" value = "login">
+                </center>
+                 
+                 <br>
+                
+                <center>
+                 <a id = "show_signup" href="#")>create an account</a>
+                </center>
+            </form>
+        </div>
+        
+        <div id = "signupform">
+            <form method = "post" action = "">
+                <label id = "close_signup" style = "float:right">x</label><br>                
+                <p style="text-align:center">Sign up</p>
+                
+                <center>
+                <input type = "text" id = "email" placeholder = "email" name = "uid" required = "required">
+                </center>
+               
+                <br>
+                
+                <center>
+                <input type = "password" id = "password" name = "upass" placeholder = "password" required = "required">
+                </center>
+                
+                <br>
+                
+                <center>
+                <input type = "password" id = "password" name = "upass" placeholder = "confirm password" required = "required">
+                </center>
+                
+                <br>
+                
+                <center>
+                <input type = "submit" id = "dologin" value = "sign up">
+                </center>
+
+            </form>
+        </div>
+     
   </body>
 </html>
